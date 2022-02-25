@@ -138,7 +138,7 @@ export default {
       return this.items.map(
         item => Object.assign({}, {
           random: Math.random(),
-        }, item)
+        }, item),
       )
     },
   },
@@ -160,7 +160,7 @@ export default {
   methods: {
     generateItems () {
       console.log('Generating ' + this.count + ' items...')
-      let time = Date.now()
+      const time = Date.now()
       const items = getData(this.count, this.enableLetters)
       console.log('Generated ' + items.length + ' in ' + (Date.now() - time) + 'ms')
       this._dirty = true

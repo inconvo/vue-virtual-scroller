@@ -7,7 +7,10 @@
       >
 
       <label>
-        <input type="checkbox" v-model="dynamic">
+        <input
+          v-model="dynamic"
+          type="checkbox"
+        >
         Dynamic scroller
       </label>
     </div>

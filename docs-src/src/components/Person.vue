@@ -1,16 +1,15 @@
 <template>
-  <div class="tr person" @click="edit">
+  <div
+    class="tr person"
+    @click="edit"
+  >
     <div class="td index">
-      {{index}}
+      {{ index }}
     </div>
     <div class="td">
       <div class="info">
-        <img
-          class="avatar"
-          :src="item.value.avatar"
-          :key="item.value.avatar"
-        />
-        <span>{{item.value.name}}</span>
+        <div class="avatar" />
+        <span>{{ item.value.name }}</span>
       </div>
     </div>
   </div>
@@ -55,6 +54,7 @@ export default {
 }
 
 .avatar {
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   margin-right: 12px;

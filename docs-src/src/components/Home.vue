@@ -3,17 +3,35 @@
     <h1>Virtual scrolling solutions</h1>
 
     <div class="badges">
-      <a href="https://www.npmjs.com/package/vue-virtual-scroller" target="_blank">
-        <img src="https://img.shields.io/npm/v/vue-virtual-scroller.svg" alt="version">
-        <img src="https://img.shields.io/npm/dm/vue-virtual-scroller.svg" alt="downloads">
+      <a
+        href="https://www.npmjs.com/package/vue-virtual-scroller"
+        target="_blank"
+      >
+        <img
+          src="https://img.shields.io/npm/v/vue-virtual-scroller.svg"
+          alt="version"
+        >
+        <img
+          src="https://img.shields.io/npm/dm/vue-virtual-scroller.svg"
+          alt="downloads"
+        >
       </a>
-      <a href="https://vuejs.org/" target="_blank">
-        <img src="https://img.shields.io/badge/vue-2.x-brightgreen.svg" alt="vue version">
+      <a
+        href="https://vuejs.org/"
+        target="_blank"
+      >
+        <img
+          src="https://img.shields.io/badge/vue-2.x-brightgreen.svg"
+          alt="vue version"
+        >
       </a>
     </div>
 
     <section>
-      <router-link :to="{ name: 'recycle' }" class="route">
+      <router-link
+        :to="{ name: 'recycle' }"
+        class="route"
+      >
         Recycle Scroller
       </router-link>
       <div class="description">
@@ -22,7 +40,10 @@
     </section>
 
     <section>
-      <router-link :to="{ name: 'dynamic' }" class="route">
+      <router-link
+        :to="{ name: 'dynamic' }"
+        class="route"
+      >
         Dynamic Scroller
       </router-link>
       <div class="description">
@@ -32,7 +53,10 @@
     </section>
 
     <section>
-      <a href="https://github.com/Akryum/vue-virtual-scroller" class="route">Documentation</a>
+      <a
+        href="https://github.com/Akryum/vue-virtual-scroller"
+        class="route"
+      >Documentation</a>
       <div class="description">
         Read the full documentation on the repository.
       </div>

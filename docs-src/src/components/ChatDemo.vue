@@ -45,14 +45,7 @@
           class="message"
           @click.native="changeMessage(item)"
         >
-          <div class="avatar">
-            <img
-              :key="item.avatar"
-              :src="item.avatar"
-              alt="avatar"
-              class="image"
-            >
-          </div>
+          <div class="avatar" />
           <div class="text">
             {{ item.message }}
           </div>
@@ -163,12 +156,6 @@ export default {
   height: 32px;
   border-radius: 50%;
   margin-right: 12px;
-}
-
-.avatar .image {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 50%;
 }
 
 .index,
