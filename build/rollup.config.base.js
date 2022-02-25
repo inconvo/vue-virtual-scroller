@@ -28,9 +28,13 @@ export default {
     }),
     css({
       output: styles => {
+        const dir = 'dist'
+        if (!fs.existsSync(dir)) {
+          fs.mkdirSync(dir)
+        }
         const file = require.resolve('vue-resize/dist/vue-resize.css')
         styles += fs.readFileSync(file, { encoding: 'utf8' })
-        fs.writeFileSync('dist/vue-virtual-scroller.css', new CleanCSS().minify(styles).styles)
+        fs.writeFileSync(dir + '/vue-virtual-scroller.css', new CleanCSS().minify(styles).styles)
       },
     }),
     babel({
